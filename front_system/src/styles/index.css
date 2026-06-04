@@ -1,0 +1,82 @@
+:root {
+  --app-bg: #f4f7fb;
+  --app-sidebar: #162033;
+  --app-sidebar-active: #2f6fed;
+  --app-border: #e5eaf3;
+  --app-text: #1f2d3d;
+  --app-muted: #758195;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  min-width: 1180px;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  color: var(--app-text);
+  font-family: Inter, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  background: var(--app-bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-card {
+  border: 0;
+  box-shadow: 0 10px 30px rgb(31 45 61 / 7%);
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.page-subtitle {
+  margin: 6px 0 0;
+  color: var(--app-muted);
+  font-size: 14px;
+}
+
+.global-loading-mask {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 16px;
+  background: rgb(15 23 42 / 35%);
+}
+
+.status-success {
+  color: #18a058;
+}
+
+.status-failed {
+  color: #d03050;
+}
+
+.status-running {
+  color: #2f6fed;
+}
